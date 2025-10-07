@@ -1,0 +1,76 @@
+.c-section--hero{
+	&:before{
+		content: "";
+		background-image: url("../images/world-map.png");
+		left: 0;
+		right: 0;
+		position: absolute;
+		bottom: -30%;
+		height: 500px;
+		z-index: 1;
+		background-size: cover;
+	}
+}
+.c-hero {
+	position: relative;
+
+	&__slider {
+		background: linear-gradient(0deg, #244065 0%, #031232 100%);
+	}
+
+	&__img {
+		img {
+			max-width: 420px;
+		}
+	}
+
+	&__desc {
+		color: var(--color-white);
+		width: 46%;
+		p{
+			@include font-size(16px,2.4);
+			color: var(--color-white-80);
+		}
+		img{
+			max-width: 100%;
+		}
+	}
+
+	.before-top-img {
+		margin-bottom: -9px;
+		text-align: left;
+
+		img {
+			height: 150px;
+			width: auto;
+		}
+	}
+	.c-slider-main{
+		padding: 36px 48px;
+		z-index: 2;
+	}
+}
+
+.lightning-before {
+	&:before {
+		content: "";
+		background-image: url("../images/lightning.svg");
+		width: 410px;
+		height: 400px;
+		position: absolute;
+		background-size: contain;
+	}
+}
+.sec-title{
+	@include font-size(28px, 1.6);
+	color: var(--color-white);
+}
+.txt-before {
+	@include font-size(58px, 1.8);
+
+	img {
+		height: 74px;
+		margin-bottom: -18px;
+		margin-right: -2px;
+	}
+}

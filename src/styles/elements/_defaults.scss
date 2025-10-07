@@ -1,0 +1,50 @@
+body,
+html {
+	font-family: $IRANSansX;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	color: #212121;
+	background: #fff;
+}
+
+.main {
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.flickity-button:focus {
+	box-shadow: none;
+}
+
+.flickity-button {
+	border-radius: 0;
+}
+
+.carousel {
+	display: none;
+}
+
+.carousel.flickity-enabled {
+	display: block;
+}
+
+.carousel:after {
+	content: 'flickity';
+	display: none;
+}
+
+@include mq($from: md) {
+	.carousel:after {
+		content: '';
+	}
+}
