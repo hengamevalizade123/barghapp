@@ -43,6 +43,9 @@
 .absolute{
 	position: absolute;
 }
+.ltr{
+	direction: ltr;
+}
 .color-primary {
 	color: var(--color-primary);
 }
@@ -61,7 +64,4 @@
 
 .bg-gradiant-btm-top {
 	background: linear-gradient(0deg, #244065 0%, #031232 100%);
-}
-.items-start{
-	align-items: flex-start;
 }
