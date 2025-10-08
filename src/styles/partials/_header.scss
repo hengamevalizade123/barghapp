@@ -596,6 +596,7 @@ header {
 	background: var(--color-white-80);
 	backdrop-filter: blur(16px);
 	box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), 0 2px 0 0 rgba(221, 228, 237, .5019607843);
+	z-index: 101;
 	.c-main-header__content {
 		height: 60px;
 	}

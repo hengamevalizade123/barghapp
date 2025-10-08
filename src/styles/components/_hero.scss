@@ -1,5 +1,5 @@
-.c-section--hero{
-	&:before{
+.c-section--hero {
+	&:before {
 		content: "";
 		background-image: url("../images/world-map.png");
 		left: 0;
@@ -10,7 +10,82 @@
 		z-index: 1;
 		background-size: cover;
 	}
+
+	.tab-buttons {
+		left: 0;
+		bottom: 0;
+		top: 0;
+		z-index: 100;
+		gap: 36px;
+		display: grid;
+		margin: auto;
+		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+		grid-template-rows: repeat(4, 1fr);
+		padding: 48px 36px;
+	}
+
+	.tab-btn {
+		background: transparent;
+		padding: 18px;
+		@include font-size(16px, 2.4);
+		cursor: pointer;
+		position: relative;
+		transition: all 0.3s ease;
+		background: var(--color-white-20);
+		backdrop-filter: blur(20px);
+		border: 1px solid var(--color-white);
+		border-radius: $border-radius;
+		span {
+			border-radius: $border-radius;
+			background: var(--color-white);
+			color: #767676;
+			padding: 8px;
+			transition: all linear .2s;
+			border: 1px solid var(--color-white);
+			box-sizing: border-box;
+		}
+	}
+
+	.tab-btn.active {
+		color: var(--color-white);
+		font-weight: bold;
+
+		span {
+			background: var(--color-secondary);
+			color: var(--color-white);
+		}
+
+		svg path {
+			fill: var(--color-white);
+		}
+	}
+
+	@keyframes lineIn {
+		from {
+			transform: scaleX(0);
+			opacity: 0;
+		}
+		to {
+			transform: scaleX(1);
+			opacity: 1;
+		}
+	}
+
+	.tab-content {
+		display: none;
+		opacity: 0;
+		transform: translateY(20px);
+		transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+		backdrop-filter: blur(4px);
+	}
+
+	.tab-content.active {
+		display: block;
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
+
 .c-hero {
 	position: relative;
 
@@ -27,11 +102,13 @@
 	&__desc {
 		color: var(--color-white);
 		width: 46%;
-		p{
-			@include font-size(16px,2.4);
+
+		p {
+			@include font-size(16px, 2.4);
 			color: var(--color-white-80);
 		}
-		img{
+
+		img {
 			max-width: 100%;
 		}
 	}
@@ -45,7 +122,8 @@
 			width: auto;
 		}
 	}
-	.c-slider-main{
+
+	.c-slider-main {
 		padding: 36px 48px;
 		z-index: 2;
 	}
@@ -61,10 +139,12 @@
 		background-size: contain;
 	}
 }
-.sec-title{
+
+.sec-title {
 	@include font-size(28px, 1.6);
 	color: var(--color-white);
 }
+
 .txt-before {
 	@include font-size(58px, 1.8);
 
@@ -74,3 +154,4 @@
 		margin-right: -2px;
 	}
 }
+
