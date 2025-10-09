@@ -70,7 +70,7 @@
 .catalog {
 	top: 56px;
 	color: var(--color-white);
-	left: 60px;
+	left: 68px;
 	transition: color .2s linear;
 	@include font-size(18px, 1.8);
 
@@ -88,5 +88,150 @@
 		path {
 			stroke: var(--color-secondary);
 		}
+	}
+}
+
+//support box
+.call-button {
+	position: fixed;
+	bottom: 36px;
+	right: 36px;
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	border: 1px solid var(--color-white);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: transform 0.3s ease;
+	z-index: 1000;
+	animation: pulse-glow 1.8s infinite ease-in-out;
+	overflow: visible;
+}
+
+.call-button:hover {
+	transform: scale(1.1);
+}
+
+.chat-cards {
+	position: fixed;
+	bottom: 114px;
+	right: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(30px);
+	transition: all 0.4s ease;
+	z-index: 999;
+	img{
+		object-fit: cover;
+	}
+}
+
+.chat-cards.active {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateY(0);
+}
+
+.chat-card {
+	display: flex;
+	align-items: center;
+	background: var(--color-white);
+	border-radius:$border-radius;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+	padding: 10px 14px;
+	min-width: 230px;
+	animation: slideIn 0.4s ease forwards;
+}
+
+.chat-card img {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+
+.chat-info {
+	flex: 1;
+}
+
+.chat-info h4 {
+	margin: 0;
+	@include font-size(14px, 1.8);
+	color: var(--color-text-grey);
+}
+
+.chat-info p {
+	margin: 3px 0 0;
+	@include font-size(13px, 1.8);
+	color: var(--color-text-grey);
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	svg{
+		width: auto;
+		height: 16px;
+		vertical-align: middle;
+		margin-left: 3px;
+		path{
+			fill: #77b042;
+		}
+	}
+}
+
+@keyframes slideIn {
+	from {
+		transform: translateY(15px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes pulse-glow {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 rgba(158, 191, 181, 0.5);
+	}
+	50% {
+		transform: scale(1.08);
+		box-shadow: 0 0 25px rgba(158, 191, 181, 0.8);
+	}
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 rgba(158, 191, 181, 0.5);
+	}
+}
+
+.call-button::before {
+	content: "";
+	position: absolute;
+	inset: -6px;
+	border-radius: 50%;
+	background: conic-gradient(
+			from 0deg,
+			rgba(0, 174, 255, 0) 0deg,
+			rgba(0, 174, 255, 1) 60deg,
+			rgba(0, 174, 255, 0) 120deg,
+			rgba(0, 174, 255, 0) 360deg
+	);
+	-webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), black 100%);
+	mask: radial-gradient(farthest-side, transparent calc(100% - 4px), black 100%);
+	animation: spin-shine 2s linear infinite;
+	z-index: -1;
+}
+
+@keyframes spin-shine {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
 	}
 }

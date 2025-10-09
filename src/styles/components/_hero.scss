@@ -14,14 +14,14 @@
 	.tab-buttons {
 		left: 0;
 		bottom: 0;
-		top: 0;
+		top: -143px;
 		z-index: 100;
 		gap: 36px;
 		display: grid;
 		margin: auto;
 		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 		grid-template-rows: repeat(4, 1fr);
-		padding: 48px 36px;
+		padding: 56px 36px;
 	}
 
 	.tab-btn {
@@ -46,7 +46,7 @@
 		}
 	}
 
-	.tab-btn.active {
+	.tab-btn.active,.tab-btn:hover {
 		color: var(--color-white);
 		font-weight: bold;
 
@@ -91,6 +91,10 @@
 
 	&__slider {
 		background: linear-gradient(0deg, #244065 0%, #031232 100%);
+	.c-slider-content{
+		z-index: 2;
+		position: relative;
+	}
 	}
 
 	&__img {
@@ -137,6 +141,19 @@
 		height: 400px;
 		position: absolute;
 		background-size: contain;
+	}
+}
+.lightning-after {
+	&:after {
+		content: "";
+		background-image: url("../images/lightning.svg");
+		width: 410px;
+		height: 400px;
+		position: absolute;
+		background-size: contain;
+		left: 0;
+		transform: scaleX(-1);
+		bottom: 0;
 	}
 }
 

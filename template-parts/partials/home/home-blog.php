@@ -15,7 +15,7 @@
 					چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لک است، و برای شرایط فعلی تکنولوژی مورد
 				</p>
 				<div class="c-slider-blogs"
-					 data-flickity='{"wrapAround": true, "autoPlay": 3500,"pageDots":false,"prevNextButtons": false,"rightToLeft": true,"cellAlign": "right","freeScroll": true}'>
+					 data-flickity='{"wrapAround": true, "autoPlay": 3000,"pageDots":false,"prevNextButtons": false,"rightToLeft": true,"cellAlign": "right","freeScroll": true}'>
 						<?php
 						$args = array(
 							'post_type' => 'post',

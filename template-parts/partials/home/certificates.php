@@ -1,4 +1,4 @@
-<section class="o-section c-section--certificates relative bg-gradiant-top-btm">
+<section class="o-section c-section--certificates relative bg-gradiant-top-btm lightning-before">
 	<div class="o-section__wrapper">
 		<div class="c-certificates u-flex space-between">
 			<div class="c-certificates__logos u-flex u-flex--column">

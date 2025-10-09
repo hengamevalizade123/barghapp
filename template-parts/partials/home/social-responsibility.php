@@ -1,4 +1,4 @@
-<section class="o-section c-section--responsibility relative radius-rounded-btm-lft bg-gradiant-btm-top">
+<section class="o-section c-section--responsibility relative radius-rounded-btm-lft bg-gradiant-btm-top lightning-after">
 	<div class="o-section__wrapper">
 		<div class="c-responsibility u-flex space-between">
 			<div class="c-responsibility__img txt-right">

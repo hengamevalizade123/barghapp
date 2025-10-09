@@ -26,5 +26,39 @@
         header.classList.remove("fixed-header");
       }
     });
+    // support
+    var callBtn = document.getElementById('callBtn');
+    var chatCards = document.getElementById('chatCards');
+    callBtn.addEventListener('click', function (event) {
+      event.stopPropagation();
+      chatCards.classList.toggle('active');
+    });
+    document.addEventListener('click', function (event) {
+      if (!chatCards.contains(event.target) && !callBtn.contains(event.target)) {
+        chatCards.classList.remove('active');
+      }
+    });
+    // hero tab
+    if (document.querySelector(".tab-btn")) {
+      var tabButtons = document.querySelectorAll(".tab-btn");
+      var tabContents = document.querySelectorAll(".tab-content");
+      tabButtons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var target = btn.getAttribute("data-tab");
+
+          // حذف اکتیو از همه
+          tabButtons.forEach(function (b) {
+            return b.classList.remove("active");
+          });
+          tabContents.forEach(function (content) {
+            content.classList.remove("active");
+          });
+
+          // فعال کردن تب انتخاب‌شده
+          btn.classList.add("active");
+          document.getElementById(target).classList.add("active");
+        });
+      });
+    }
   });
 })();
