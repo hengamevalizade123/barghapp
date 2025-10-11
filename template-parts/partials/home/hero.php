@@ -10,8 +10,9 @@
 					<div class="tabs c-slider-main">
 						<div class="tab-buttons absolute">
 							<button class="tab-btn flex-1 active"
-								data-tab="tab1">
-								<span class="u-flex gap-md items-center u-flex--column justify-center h-100 w-100 space-between">
+									data-tab="tab1">
+								<span
+									class="u-flex gap-md items-center u-flex--column justify-center h-100 w-100 space-between">
 								<svg width="60" height="60" viewBox="0 0 80 93" fill="none"
 									 xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -38,8 +39,10 @@
 							</button>
 							<button class="tab-btn flex-1"
 									data-tab="tab2">
-								<span class="u-flex gap-md items-center u-flex--column justify-center h-100 w-100 space-between"><svg width="60" height="60" viewBox="0 0 80 80" fill="none"
-										   xmlns="http://www.w3.org/2000/svg">
+								<span
+									class="u-flex gap-md items-center u-flex--column justify-center h-100 w-100 space-between"><svg
+										width="60" height="60" viewBox="0 0 80 80" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
 									<path
 										d="M50 75.8334H30C11.9 75.8334 4.16666 68.1 4.16666 50V30C4.16666 11.9 11.9 4.16669 30 4.16669H50C68.1 4.16669 75.8333 11.9 75.8333 30V50C75.8333 68.1 68.1 75.8334 50 75.8334ZM30 9.16669C14.6333 9.16669 9.16666 14.6334 9.16666 30V50C9.16666 65.3667 14.6333 70.8334 30 70.8334H50C65.3667 70.8334 70.8333 65.3667 70.8333 50V30C70.8333 14.6334 65.3667 9.16669 50 9.16669H30Z"
 										fill="#767676"/>
@@ -58,9 +61,10 @@
 							</button>
 							<button class="tab-btn flex-1"
 									data-tab="tab3">
-						<span class="u-flex gap-md items-center u-flex--column justify-center h-100 w-100 space-between">
+						<span
+							class="u-flex gap-md items-center u-flex--column justify-center h-100 w-100 space-between">
 							<svg width="60" height="60" viewBox="0 0 80 80" fill="none"
-										   xmlns="http://www.w3.org/2000/svg">
+								 xmlns="http://www.w3.org/2000/svg">
 									<path
 										d="M28.9 75.8334H6.66666C5.29999 75.8334 4.16666 74.7 4.16666 73.3334V53.3334C4.16666 48.2667 8.26666 44.1667 13.3333 44.1667H28.9C30.2667 44.1667 31.4 45.3 31.4 46.6667V73.3334C31.4 74.7 30.2667 75.8334 28.9 75.8334ZM9.16666 70.8334H26.4V49.1667H13.3333C11.0333 49.1667 9.16666 51.0334 9.16666 53.3334V70.8334Z"
 										fill="#767676"/>
@@ -79,7 +83,8 @@
 							</button>
 							<button class="tab-btn flex-1"
 									data-tab="tab3">
-							<span class="u-flex gap-md items-center u-flex--column justify-center h-100 w-100 space-between">
+							<span
+								class="u-flex gap-md items-center u-flex--column justify-center h-100 w-100 space-between">
 								<svg width="60" height="60" viewBox="0 0 80 80" fill="none"
 									 xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -99,7 +104,6 @@
 </span>
 							</button>
 						</div>
-
 						<div class="tab-content active" id="tab1">
 							<div class="c-slider-cell w-100 txt-center color-white u-flex items-center space-between">
 								<div class="c-hero__img">
@@ -152,7 +156,7 @@
 						<div class="tab-content" id="tab2">
 							<div class="c-slider-cell w-100 txt-center color-white u-flex items-center space-between">
 								<div class="c-hero__img">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/battery.png"
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/lamp.png"
 										 alt="برقآپ">
 								</div>
 								<div class="c-hero__desc u-flex--column u-flex gap-md items-center">
@@ -199,51 +203,46 @@
 							</div>
 						</div>
 						<div class="tab-content" id="tab3">
-							<div class="c-slider-cell w-100 txt-center color-white u-flex items-center space-between">
+							<div
+								class="c-slider-cell w-100 txt-center color-white u-flex items-center space-between u-flex--column tab-pro">
 								<div class="c-hero__img">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/battery.png"
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/lamp.png"
 										 alt="برقآپ">
 								</div>
-								<div class="c-hero__desc u-flex--column u-flex gap-md items-center">
-									<h2 class="sec-title u-flex u-flex--column gap-sm m-0">
+								<div class="c-hero__desc u-flex gap-md items-center">
+									<div class="c-hero__desc-form">
+										<h2 class="sec-title u-flex u-flex--column gap-sm m-0">
 								<span class="txt-before u-flex items-center">
 									بـــــــرق آپـــــــــــــــــــــــ
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/txt-before.svg"
 										 alt="برقآپ">
 								</span>
-										مارکــــــــــــت
-										مــحــصـــــــولات و تــولـیـــــــــدات مـــا
-									</h2>
-									<p class="txt-justify">
-										سطرآنچنان که لک است، و برای شرایطو سطرآنچنان که لک است،سطرآنچنان که لک است،لک
-										است،سطرآنچنان که لک است، و برای شرایط فعلی ت ن و سطرآنچنان
-									</p>
-									<img
-										src="<?php echo get_template_directory_uri(); ?>/assets/images/mockup-website.png"
-										alt="برقآپ">
-									<a class="secondary-btn border-radius u-flex items-center gap-sm" href="#">
-										ورود به سامانه
-										<svg width="24" height="24" viewBox="0 0 40 40" fill="none"
-											 xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M14.1666 23.75C14.1666 26.95 16.8 29.5833 20 29.5833C23.2 29.5833 25.8333 26.95 25.8333 23.75"
-												stroke="white" stroke-width="2.5" stroke-miterlimit="10"
-												stroke-linecap="round" stroke-linejoin="round"/>
-											<path d="M14.6834 3.33325L8.65002 9.38325" stroke="white" stroke-width="2.5"
-												  stroke-miterlimit="10" stroke-linecap="round"
-												  stroke-linejoin="round"/>
-											<path d="M25.3167 3.33325L31.35 9.38325" stroke="white" stroke-width="2.5"
-												  stroke-miterlimit="10" stroke-linecap="round"
-												  stroke-linejoin="round"/>
-											<path
-												d="M3.33325 13.0833C3.33325 10 4.98325 9.75 7.03325 9.75H32.9666C35.0166 9.75 36.6666 10 36.6666 13.0833C36.6666 16.6667 35.0166 16.4167 32.9666 16.4167H7.03325C4.98325 16.4167 3.33325 16.6667 3.33325 13.0833Z"
-												stroke="white" stroke-width="2.5"/>
-											<path
-												d="M5.83325 16.6666L8.18325 31.0666C8.71658 34.3 9.99992 36.6666 14.7666 36.6666H24.8166C29.9999 36.6666 30.7666 34.4 31.3666 31.2666L34.1666 16.6666"
-												stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-										</svg>
-
-									</a>
+											اولـــــین ســـــامـــــانه تـــــامین و مدیـــــریت انــــرژی
+										</h2>
+										<form class="u-flex wrap gap-md" action="#">
+											<label class="block w-100" for="portal">برای ورود به سامانه برقاپ پرو شماره
+												خود را وارد کنید.
+											</label>
+											<input id="portal" name="phone" type="tel" pattern="[0-9]{11}" maxlength="11" required
+												   placeholder=".شماره تماس خود را وارد کنید" oninput="validatePhone(this)">
+										 <input
+												class="secondary-btn" type="submit" value="ثبت">
+										</form>
+									</div>
+									<div class="c-hero__desc-txt">
+										<p class="txt-justify m-0">
+											سطرآنچنان که لک است، و برای شرایطو سطرآنچنان که لک است،سطرآنچنان که لک
+											است،لک
+											سطرآنچنان که لک است، و برای شرایطو سطرآنچنان که لک است،سطرآنچنان که لک
+											است،لک
+											است،سطرآنچنان که لک است، و برای شرایط فعلی ت ن و سطرآنچنان
+											است،سطرآنچنان که لک است، و برای شرایط فعلی ت ن و سطرآنچنان
+											است،سطرآنچنان که لک است، و برای شرایط فعلی ت ن و سطرآنچنان
+											است،سطرآنچنان که لک است، و برای شرایط فعلی ت ن و سطرآنچنان
+											است،سطرآنچنان که لک است، و برای شرایط فعلی ت ن و سطرآنچنان
+											است،سطرآنچنان که لک است، و برای شرایط فعلی ت ن و سطرآنچنان
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -253,3 +252,8 @@
 		</div>
 	</div>
 </section>
+<script>
+	function validatePhone(input) {
+		input.value = input.value.replace(/[^0-9]/g, '');
+	}
+</script>
