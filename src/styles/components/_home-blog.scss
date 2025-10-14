@@ -1,6 +1,6 @@
 .c-home-blog {
 	&__items {
-		width: 50%;
+		width: 60%;
 
 		> p {
 			@include font-size(16px, 2.4);
@@ -31,7 +31,7 @@
 		}
 
 		.carousel-cell {
-			width: 56%;
+			width: 40%;
 			margin-left: 28px;
 			border-radius: $border-radius;
 			background: var(--color-white);
@@ -59,7 +59,7 @@
 	}
 
 	&__img {
-		width: 46%;
+		width: 40%;
 	}
 }
 
